@@ -13,7 +13,9 @@
   },
   "main": "overcast.js",
   "scripts": {
-    "test": "rm -rf ./test/integration/.overcast && node ./node_modules/jasmine-node/bin/jasmine-node --coffee --color --verbose ./test"
+    "test": "rm -rf ./test/integration/.overcast && node ./node_modules/jasmine-node/bin/jasmine-node --coffee --color --verbose ./test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "bin": {
     "overcast": "bin/overcast"
@@ -27,9 +29,11 @@
     "lodash": "2.4.1",
     "minimist": "0.0.8",
     "rimraf": "2.2.8",
-    "slack-notify": "0.1.1"
+    "slack-notify": "0.1.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "jasmine-node": "1.14.5"
-  }
+  },
+  "snyk": true
 }
