@@ -22,12 +22,12 @@
     "aws-sdk": "2.0.0-rc.14",
     "bluebird": "1.2.1",
     "colors": "0.6.2",
-    "do-wrapper": "3.0.1",
+    "do-wrapper": "3.1.0",
     "linode-api": "0.1.2",
-    "lodash": "2.4.1",
+    "lodash": "4.17.12",
     "minimist": "0.0.8",
     "rimraf": "2.2.8",
-    "slack-notify": "0.1.1"
+    "slack-notify": "0.1.7"
   },
   "devDependencies": {
     "jasmine-node": "1.14.5"
