@@ -13,23 +13,27 @@
   },
   "main": "overcast.js",
   "scripts": {
-    "test": "rm -rf ./test/integration/.overcast && node ./node_modules/jasmine-node/bin/jasmine-node --coffee --color --verbose ./test"
+    "test": "rm -rf ./test/integration/.overcast && node ./node_modules/jasmine-node/bin/jasmine-node --coffee --color --verbose ./test",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "bin": {
     "overcast": "bin/overcast"
   },
   "dependencies": {
-    "aws-sdk": "2.88.0",
+    "aws-sdk": "2.178.0",
     "bluebird": "1.2.1",
     "colors": "1.1.2",
     "linode-api": "0.1.2",
-    "lodash": "3.10.1",
+    "lodash": "4.17.5",
     "minimist": "1.2.0",
     "overcast-do-wrapper": "3.11.2",
     "rimraf": "2.5.2",
-    "slack-notify": "0.1.6"
+    "slack-notify": "0.1.7",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "jasmine-node": "1.14.5"
-  }
+  },
+  "snyk": true
 }
