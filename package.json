@@ -27,7 +27,7 @@
     "minimist": "1.2.0",
     "overcast-do-wrapper": "3.11.2",
     "rimraf": "2.5.2",
-    "slack-notify": "0.1.6"
+    "slack-notify": "2.0.0"
   },
   "devDependencies": {
     "jasmine-node": "1.14.5"
